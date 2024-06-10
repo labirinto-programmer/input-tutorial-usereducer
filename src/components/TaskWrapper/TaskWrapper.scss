@@ -1,0 +1,16 @@
+.tasks-box {
+    max-height: 450px;
+    overflow: scroll;
+    .task-wrapper {
+        padding-left: var(--p-sm);
+        padding-right: var(--p-sm);
+        margin-top: var(--m-sm);
+        margin-bottom: var(--m-sm);
+        background-color: var(--bc-color);
+        border-radius: var(--border-radius-primary);
+        -webkit-border-radius: var(--border-radius-primary);
+        -moz-border-radius: var(--border-radius-primary);
+        -ms-border-radius: var(--border-radius-primary);
+        -o-border-radius: var(--border-radius-primary);
+    }
+}

@@ -1,0 +1,28 @@
+.edit-bc {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bc-edit-color);
+    &.active {
+        display: flex;
+    }
+    .edit-box {
+        width: 500px;
+        height: 200px;
+        margin-left: auto;
+        margin-top: 200px;
+        margin-right: auto;
+        padding-left: var(--p-sm);
+        padding-right: var(--p-sm);
+        background-color: var(--bc-color);
+        border-radius: var(--border-radius-primary);
+        -webkit-border-radius: var(--border-radius-primary);
+        -moz-border-radius: var(--border-radius-primary);
+        -ms-border-radius: var(--border-radius-primary);
+        -o-border-radius: var(--border-radius-primary);
+    }
+}

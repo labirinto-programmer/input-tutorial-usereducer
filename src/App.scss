@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//**** Font Family ****//
+/*~~~~~ SpecialElite Font ~~~~~*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  //**** color ****//
+  --primary-color: #5A877E;
+  --secondary-color: #EDEDED;
+  --bc-color: #AAC0BB;
+  --bc-edit-color: #4a4a4ab9;
+  --black-color: #4a4a4a;
+  --lightblack-color: #bdc1c6;
+  --green-color: #81c784;
+  --red-color: #ed2939;
+  --darkred-color: #900603;
+  --blue-color: #3a9bdc;
+  //**** distance ****//
+  --distance-primary: 3.125rem;
+  /*~~~~~ Margines ~~~~~*/
+  --margin-primary: var(--distance-primary); //50
+  --m-lg: calc(var(--margin-primary) / 2); //25
+  --m-md: calc(var(--m-lg) - 0.3125rem); //20
+  --m-sm: calc(var(--m-md) - 0.3125rem); //15
+  --m-xs: 0.625rem; //10
+  /*~~~~~ Padding ~~~~~*/
+  --padding-primary: var(--distance-primary); //50
+  --p-lg: calc(var(--padding-primary) / 2); //25
+  --p-md: calc(var(--p-lg) - 0.3125rem); //20
+  --p-sm: calc(var(--p-md) - 0.3125rem); //15
+  --p-xs: 0.625rem; //10
+  /*~~~~~ Gap ~~~~~*/
+  --gap-primary: calc(var(--distance-primary) - 1.25rem); //30
+  --gap-secondary: calc(var(--distance-primary) - 1.875rem); //20
+  --gap-thirdly: calc(var(--gap-primary) - 1.25rem); //10
+  --gap-fourthly: calc(var(--gap-thirdly) / 2); //5
+  //**** transition ****//
+  --transition-primary: 0.6s;
+  //**** border ****//
+  --border-width-primary: 2px;
+  --border-style-primary:  solid;
+  --border-radius-primary: 10px;
+  --border-radius-secondary: 50%;
+  //**** font family ****//
+  /*~~~~~ font-primary ~~~~~*/
+  --font-primary: Nunito;
+}
+@media screen and (min-width: 280px) {
+  :root {
+      /*~~~~~ Typography  ~~~~~*/
+      --h1-font-size: calc( 18.216px + (19.436 - 18.216) * (100vw - 280px) / (1280 - 280));
+      --lg-font-size: calc( 14.995px + (16 - 14.995) * (100vw - 280px) / (1280 - 280));
+      --md-font-size: calc( 14.054px + (14.995 - 14.054) * (100vw - 280px) / (1280 - 280));
+      --sm-font-size: calc( 13.171px + (14.054 - 13.171) * (100vw - 280px) / (1280 - 280));
+  }
+}
+body {
+  font-family: var(--font-primary);
+  background-color: var(--primary-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+// Flex 
+%fb {
+  display: flex;
+}
+.fb-primary {
+  @extend %fb;
+  align-items: center;
+}
+.fb-secondary {
+  @extend %fb;
+  justify-content: center;
+  align-items: center;
+}
+.fb-thirdly {
+  @extend %fb;
+  justify-content: center;
+  flex-direction: column;
+}
+.fb-fourthly {
+  @extend %fb;
+  justify-content: space-between;
+  align-items: center;
+}
+.gap-primary {
+  gap: var(--gap-primary);
+}
+.gap-secondary {
+  gap: var(--gap-secondary);
+}
+.gap-thirdly {
+  gap: var(--gap-thirdly);
+}
+.gap-fourthly {
+  gap: var(--gap-fourthly);
+}

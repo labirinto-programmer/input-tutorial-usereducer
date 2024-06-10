@@ -1,0 +1,86 @@
+%btn {
+    all: unset;
+    text-transform: capitalize;
+    margin: var(--m-lg) 0;
+    transition: var(--transition-primary);
+    -webkit-transition: var(--transition-primary);
+    -moz-transition: var(--transition-primary);
+    -ms-transition: var(--transition-primary);
+    -o-transition: var(--transition-primary);
+    &:hover {
+        cursor: pointer;
+    }
+}
+%btn-radius {
+    @extend%btn;
+    padding: var(--p-xs);
+    background-color: var(--secondary-color);
+    border-width: var(--border-width-primary);
+    border-style: var(--border-style-primary);
+    border-radius: var(--border-radius-secondary);
+    -webkit-border-radius: var(--border-radius-secondary);
+    -moz-border-radius: var(--border-radius-secondary);
+    -ms-border-radius: var(--border-radius-secondary);
+    -o-border-radius: var(--border-radius-secondary);
+    .btn-icon {
+        font-size: var(--h1-font-size);
+    }
+}
+.btn-add {
+    @extend %btn;
+    font-size: var(--md-font-size);
+    color: var(--secondary-color);
+    padding: var(--p-xs) var(--p-lg);
+    background-color: var(--red-color);
+    border-radius: var(--border-radius-primary);
+    -webkit-border-radius: var(--border-radius-primary);
+    -moz-border-radius: var(--border-radius-primary);
+    -ms-border-radius: var(--border-radius-primary);
+    -o-border-radius: var(--border-radius-primary);
+    &:hover {
+        background-color: var(--darkred-color);
+    }
+}
+.btn-done {
+    @extend%btn-radius;
+    color: var(--green-color);
+    border-color: var(--green-color);
+    &.active,
+    &:hover {
+        color: var(--secondary-color);
+        background-color: var(--green-color);
+    }
+}
+.btn-edit {
+    @extend %btn-radius;
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+    &:hover {
+        color: var(--secondary-color);
+        background-color: var(--blue-color);
+    }
+}
+.btn-delete {
+    @extend %btn-radius;
+    color: var(--red-color);
+    border-color: var(--red-color);
+    &:hover {
+        color: var(--secondary-color);
+        background-color: var(--red-color);
+    }
+}
+.btn-change {
+    @extend %btn;
+    font-size: var(--md-font-size);
+    color: var(--secondary-color);
+    padding: var(--p-xs) var(--p-lg);
+    background-color: var(--red-color);
+    border-radius: var(--border-radius-primary);
+    -webkit-border-radius: var(--border-radius-primary);
+    -moz-border-radius: var(--border-radius-primary);
+    -ms-border-radius: var(--border-radius-primary);
+    -o-border-radius: var(--border-radius-primary);
+    &:hover {
+        background-color: var(--darkred-color);
+    }
+}

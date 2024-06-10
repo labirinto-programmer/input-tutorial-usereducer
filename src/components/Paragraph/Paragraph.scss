@@ -1,0 +1,15 @@
+%paragraph {
+    font-size: var(--md-font-size);
+    text-transform: capitalize;
+}
+.paragraph-task {
+    @extend%paragraph;
+    color: var(--black-color);
+    &.line-through {
+        text-decoration: line-through 2px var(--red-color);
+    }
+}
+.paragraph-toast {
+    @extend%paragraph;
+    color: var(--secondary-color);
+}

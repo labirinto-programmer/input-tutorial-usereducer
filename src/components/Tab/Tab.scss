@@ -1,0 +1,36 @@
+%impact {
+    border-width: var(--border-width-primary);
+    border-style: var(--border-style-primary);
+    border-radius: var(--border-width-primary);
+    -webkit-border-radius: var(--border-width-primary);
+    -moz-border-radius: var(--border-width-primary);
+    -ms-border-radius: var(--border-width-primary);
+    -o-border-radius: var(--border-width-primary);
+
+}
+.tab-menu {
+    margin: var(--m-sm);
+    .tab-list {
+        @extend %impact;
+        color: var(--black-color);
+        font-size: var(--lg-font-size);
+        padding: var(--p-xs);
+        text-transform: capitalize;
+        border-color: var(--black-color);
+        &.active {
+            @extend %impact;
+            color: var(--secondary-color);
+            background-color: var(--darkred-color);
+            border-color: var(--darkred-color);
+        }
+        &:hover {
+            @extend %impact;
+            cursor: pointer;
+            color: var(--darkred-color);
+            border-color: var(--darkred-color);
+        }
+        &.active:hover {
+            color: var(--secondary-color);
+        }
+    }
+}

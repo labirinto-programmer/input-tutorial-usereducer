@@ -1,0 +1,25 @@
+.toast-box {
+    display: none;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: var(--p-xs);
+    background-color: var(--green-color);
+    transition: var(--transition-primary);
+    -webkit-transition: var(--transition-primary);
+    -moz-transition: var(--transition-primary);
+    -ms-transition: var(--transition-primary);
+    -o-transition: var(--transition-primary);
+    border-color: var(--green-color);
+    border-width: var(--border-width-primary);
+    border-style: var(--border-style-primary);
+    border-radius: var(--border-radius-primary);
+    -webkit-border-radius: var(--border-radius-primary);
+    -moz-border-radius: var(--border-radius-primary);
+    -ms-border-radius: var(--border-radius-primary);
+    -o-border-radius: var(--border-radius-primary);
+    &.active {
+        display: block;
+    }
+}

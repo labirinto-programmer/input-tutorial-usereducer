@@ -1,0 +1,13 @@
+.box-wrapper {
+    width: 500px;
+    padding: var(--p-sm);
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-primary);
+    -webkit-border-radius: var(--border-radius-primary);
+    -moz-border-radius: var(--border-radius-primary);
+    -ms-border-radius: var(--border-radius-primary);
+    -o-border-radius: var(--border-radius-primary);
+}
